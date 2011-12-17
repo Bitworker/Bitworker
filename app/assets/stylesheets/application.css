@@ -1,0 +1,16 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+/*Jquery CSS dependencies*/
+  body{ font: 100% "Trebuchet MS", sans-serif; margin: 50px;}
+	.demoHeaders { margin-top: 2em; }
+	#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+	#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+	ul#icons {margin: 0; padding: 0;}
+	ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+	ul#icons span.ui-icon {float: left; margin: 0 4px;}
