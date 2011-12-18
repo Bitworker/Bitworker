@@ -37,3 +37,8 @@ group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
 end
+
+# For Heroku
+group :production do
+  gem "pg"
+end
