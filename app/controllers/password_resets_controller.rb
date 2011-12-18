@@ -31,7 +31,7 @@ skip_before_filter :require_login
     @user.password_confirmation = params[:user][:password_confirmation]
     # the next line clears the temporary token and updates the password
     if @user.change_password!(params[:user][:password])
-      redirect_to(root_path, :notice => 'Passwort wurde erfolgreich geändert')
+      redirect_to(root_path, :notice => 'Passwort wurde erfolgreich geaendert')
     else
       render :action => "edit"
     end
