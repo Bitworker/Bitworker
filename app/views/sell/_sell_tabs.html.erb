@@ -1,5 +1,7 @@
-<%= tabs_tag do |tab| %>
+<%= tabs_tag :open_tabs => { :id => "tab_nav" } do |tab| %>
   <%= tab.sell_step1 'Sell step1', :action => "step1" %>
   <%= tab.sell_step2 'Sell step2', :action => "step2" %>
   <%= tab.sell_step3 'Sell step3', :action => "step3" %>
 <% end %>
+<br>
+<br>

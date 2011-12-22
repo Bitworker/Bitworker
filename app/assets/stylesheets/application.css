@@ -14,3 +14,22 @@
 	ul#icons {margin: 0; padding: 0;}
 	ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
 	ul#icons span.ui-icon {float: left; margin: 0 4px;}
+  
+  
+  
+#tab_nav {
+    list-style: none outside none;
+}
+
+#tab_nav a {
+    background: url("../img/nav_slant.gif") no-repeat scroll right top #CCCCCC;
+    color: #666666;
+    display: block;
+    float: left;
+    font-size: 120%;
+    font-weight: bold;
+    padding: 6px 30px 6px 5px;
+    text-decoration: none;
+}
+
+#tab_nav a:hover {text-decoration:none; font-weight:bold; background-color:#ff0; }
