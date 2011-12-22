@@ -7,6 +7,9 @@ Bitworker::Application.routes.draw do
   get "signup" => "users#new", :as => "signup"
   get "index" => "home#index"
 
+  get "sell" => "sell#index"
+  get "buy" => "buy#index"
+
   resources :users
   resources :sessions
   resources :password_resets
