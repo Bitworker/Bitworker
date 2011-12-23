@@ -7,29 +7,24 @@
 */
 
 /*Jquery CSS dependencies*/
-  body{ font: 100% "Trebuchet MS", sans-serif; margin: 50px;}
-	.demoHeaders { margin-top: 2em; }
+  body{font: 100% "Trebuchet MS", sans-serif; margin: 50px;}
+	.demoHeaders {margin-top: 2em;}
 	#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
 	#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
 	ul#icons {margin: 0; padding: 0;}
 	ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
 	ul#icons span.ui-icon {float: left; margin: 0 4px;}
   
-  
-  
-#tab_nav {
-    list-style: none outside none;
-}
+/*Tab styling of div class "tab_nav"*/
+  #tab_nav {list-style: none outside none;}
+  #tab_nav a {background: url("../img/nav_slant.gif") no-repeat scroll right top #CCCCCC; color: #666666; display: block; float: left; font-size: 120%; font-weight: bold; padding: 6px 30px 6px 5px; text-decoration: none;}
+  #tab_nav a:hover {text-decoration:none; font-weight:bold; background-color:#ff0;}
 
-#tab_nav a {
-    background: url("../img/nav_slant.gif") no-repeat scroll right top #CCCCCC;
-    color: #666666;
-    display: block;
-    float: left;
-    font-size: 120%;
-    font-weight: bold;
-    padding: 6px 30px 6px 5px;
-    text-decoration: none;
-}
-
-#tab_nav a:hover {text-decoration:none; font-weight:bold; background-color:#ff0; }
+/*Simple form styling*/
+  .simple_form label {float: left; width: 100px; text-align: right; margin: 2px 10px;}
+  .simple_form div.input {margin-bottom: 10px;}
+  .simple_form div.boolean, .simple_form input[type='submit'] {margin-left: 120px;}
+  .simple_form div.boolean label, .simple_form label.collection_radio {float: none;  margin: 0;}
+  .simple_form label.collection_radio { margin-right: 10px;  margin-left: 2px;}
+  .simple_form .error {clear: left; margin-left: 120px; font-size: 12px; color: #D00; display: block;}
+  .simple_form .hint {clear: left;margin-left: 120px; font-size: 12px;color: #555;display: block; font-style: italic;}

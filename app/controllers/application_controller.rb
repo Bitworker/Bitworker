@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   def not_authenticated
     redirect_to login_url
-    flash[:alert] = "First login to access this page."
+    flash[:alert] = "Bitte erst einloggen. Sie werden auf die angeforderte Seite weitergeleitet."
   end
 
 end
