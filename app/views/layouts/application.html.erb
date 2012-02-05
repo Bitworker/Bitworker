@@ -8,22 +8,31 @@
 </head>
 <body>
 
-  <div class="user_nav">
     <% if current_user %>
-      Logged in as <%= current_user.email %>.
-      <%= link_to "Log out", logout_path %>
-      
-      <div class="site_nav">
-        <%= link_to "Sell", sell_path %> |
-        <%= link_to "Buy", buy_path %>
+      <div class="session_nav">
+        <h3>
+          Eingeloggt als <%= current_user.email %> | 
+          <%= link_to "Mein Konto", %> | 
+          <%= link_to "Ausloggen", logout_path %>
+        </h3>
       </div>
-      
+      <div class="site_nav">
+        <div class="padding20">
+          <h3>
+            <%= link_to "Sell", sell_path %> |
+            <%= link_to "Buy", buy_path %>
+          </h3>
+        </div>
+      </div>
     <% else %>
-      <%= link_to "Sign up", signup_path %> or
-      <%= link_to "log in", login_path %>.  
+      <div class="session_nav">
+        <h3>
+          <%= link_to "Sign up", signup_path %> or
+          <%= link_to "log in", login_path %>.  
+        </h3>
+      </div>
     <% end %>
-  </div>  
-
+    
   <% flash.each do |name, msg| %>
     <% if flash[:notice] %>
 		<div class="ui-widget">
@@ -44,7 +53,9 @@
   <% end %>
 
   <div class="main">
-    <%= yield %>
+    
+      <%= yield %>
+      
   </div>  
 
 </body>
